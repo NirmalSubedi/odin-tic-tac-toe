@@ -71,7 +71,9 @@ body {
   background: #dddb;
 }
 
-.restart-btn:hover {
+.restart-btn:hover,
+.restart-btn:focus {
+  color: #ff0000;
   outline: 2px solid #000;
 }
 
@@ -79,6 +81,10 @@ body {
 .start-btn:focus {
   outline-offset: 2px;
   outline: 2px solid #000;
+}
+
+.board .cell {
+  background: #fff;
 }
 
 .player {
