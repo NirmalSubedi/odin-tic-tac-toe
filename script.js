@@ -232,7 +232,6 @@ const DisplayController = (function () {
 
         };
         renderGameResults();
-
     };
 
     // Event Listeners and Handlers
@@ -242,7 +241,6 @@ const DisplayController = (function () {
         const newName = target.value;
         const playerNumber = Number(parent.getAttribute('class').at(-1));
         players.getPlayers()[playerNumber - 1].name = newName === '' ? target.placeholder : newName;
-        updateScreen();
     };
     playerInputs.forEach((input) => input.addEventListener("change", changePlayerNameHandler));
 
